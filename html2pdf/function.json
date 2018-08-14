@@ -1,0 +1,19 @@
+{
+    "bindings": [
+     {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "name": "req",
+      "direction": "in",
+      "methods": [
+       "post"
+      ],
+      "route": "html2pdf"
+     },
+     {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+     }
+    ]
+   }

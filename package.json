@@ -1,0 +1,50 @@
+{
+  "name": "azure-html2pdf-api",
+  "version": "1.0.0",
+  "description": "Simple function to convert html2pdf, it does require a non-consumption service plan due to restrictions",
+  "author": "Accenture",
+  "license": "MIT",
+  "main": "index.js",
+  "private": false,
+  "engines": {
+    "node": ">=8.11.0",
+    "npm": ">=2.15.9",
+    "yarn": ">=0.17.9"
+  },
+  "scripts": {
+    "precommit": "npm run lint && npm run test",
+    "test": "mocha __tests__/**/*.spec.js",
+    "coverage": "nyc --reporter=text npm run test",
+    "report": "mocha __tests__/**/*.spec.js --reporter mocha-junit-reporter",
+    "security-check": "nsp check",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Powdor/AzureFuncHtml2Pdf.git"
+  },
+  "dependencies": {
+    "http-status": "^1.2.0",
+    "html-pdf": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.15.0",
+    "nsp": "^3.1.0",
+    "nyc": "^12.0.2",
+    "prettier": "^1.13.5",
+    "proxyquire": "^2.0.1",
+    "sinon": "^4.1.3"
+  }
+}
